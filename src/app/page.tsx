@@ -414,12 +414,12 @@ export default function Dashboard() {
         {/* Filters */}
         <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
           <div className="flex items-center gap-2 mb-4">
-            <Filter size={20} className="text-gray-600" />
+            <Filter size={20} className="text-black" />
             <h2 className="text-lg font-semibold">Filters</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Health System</label>
+              <label className="block text-sm font-medium text-black mb-1">Health System</label>
               <select
                 value={selectedHealthSystem}
                 onChange={(e) => setSelectedHealthSystem(e.target.value)}
@@ -432,7 +432,7 @@ export default function Dashboard() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Period</label>
+              <label className="block text-sm font-medium text-black mb-1">Period</label>
               <select
                 value={selectedPeriod}
                 onChange={(e) => setSelectedPeriod(e.target.value)}
@@ -445,7 +445,7 @@ export default function Dashboard() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-black mb-1">
                 Census Range: {censusRange[0]} - {censusRange[1]}
               </label>
               <input
@@ -458,7 +458,7 @@ export default function Dashboard() {
               />
             </div>
           </div>
-          <div className="mt-4 text-sm text-gray-600">
+          <div className="mt-4 text-sm text-black">
             Showing {filteredData.length} of {data.length} records
           </div>
         </div>
@@ -472,7 +472,7 @@ export default function Dashboard() {
               className={`px-4 py-2 rounded-lg font-medium transition ${
                 activeTab === tab
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100'
+                  : 'bg-white text-black hover:bg-gray-100'
               }`}
             >
               {tab.charAt(0).toUpperCase() + tab.slice(1)}
@@ -521,13 +521,13 @@ export default function Dashboard() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200">
-                      <th className="text-left py-3 px-4 font-semibold text-gray-700">Facility</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-700">Health System</th>
-                      <th className="text-left py-3 px-4 font-semibold text-gray-700">Period</th>
-                      <th className="text-right py-3 px-4 font-semibold text-gray-700">Census</th>
-                      <th className="text-right py-3 px-4 font-semibold text-gray-700">AOE PPD</th>
-                      <th className="text-right py-3 px-4 font-semibold text-gray-700">Peer Mid</th>
-                      <th className="text-right py-3 px-4 font-semibold text-gray-700">Variance</th>
+                      <th className="text-left py-3 px-4 font-semibold text-black">Facility</th>
+                      <th className="text-left py-3 px-4 font-semibold text-black">Health System</th>
+                      <th className="text-left py-3 px-4 font-semibold text-black">Period</th>
+                      <th className="text-right py-3 px-4 font-semibold text-black">Census</th>
+                      <th className="text-right py-3 px-4 font-semibold text-black">AOE PPD</th>
+                      <th className="text-right py-3 px-4 font-semibold text-black">Peer Mid</th>
+                      <th className="text-right py-3 px-4 font-semibold text-black">Variance</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -538,18 +538,18 @@ export default function Dashboard() {
                       return (
                         <tr key={idx} className="border-b border-gray-100 hover:bg-gray-50">
                           <td className="py-3 px-4">{record.facility_name}</td>
-                          <td className="py-3 px-4 text-gray-600">{record.health_system}</td>
-                          <td className="py-3 px-4 text-gray-600">{record.period}</td>
+                          <td className="py-3 px-4 text-black">{record.health_system}</td>
+                          <td className="py-3 px-4 text-black">{record.period}</td>
                           <td className="py-3 px-4 text-right">{record.daily_census?.toFixed(0) || '-'}</td>
                           <td className="py-3 px-4 text-right font-medium">
                             ${record.aoe_ppd?.toFixed(2) || '-'}
                           </td>
-                          <td className="py-3 px-4 text-right text-gray-600">
+                          <td className="py-3 px-4 text-right text-black">
                             ${record.aoe_peer_mid?.toFixed(2) || '-'}
                           </td>
                           <td className={`py-3 px-4 text-right font-medium ${
                             variance !== null
-                              ? variance > 0 ? 'text-red-600' : 'text-green-600'
+                              ? variance > 0 ? 'text-green-600' : 'text-red-600'
                               : ''
                           }`}>
                             {variance !== null ? `${variance > 0 ? '+' : ''}${variance.toFixed(1)}%` : '-'}
@@ -561,7 +561,7 @@ export default function Dashboard() {
                 </table>
               </div>
               {filteredData.length > 20 && (
-                <p className="mt-4 text-sm text-gray-600 text-center">
+                <p className="mt-4 text-sm text-black text-center">
                   Showing 20 of {filteredData.length} records
                 </p>
               )}
@@ -700,17 +700,17 @@ export default function Dashboard() {
                       className="hidden"
                     />
                     <Upload size={48} className={`mx-auto mb-4 ${dragActive ? 'text-green-500' : 'text-gray-400'}`} />
-                    <p className="text-lg font-medium text-gray-700 mb-2">
+                    <p className="text-lg font-medium text-black mb-2">
                       {dragActive ? 'Drop file here' : 'Drag and drop your file here'}
                     </p>
-                    <p className="text-gray-600 mb-4">or</p>
+                    <p className="text-black mb-4">or</p>
                     <button
                       onClick={() => fileInputRef.current?.click()}
                       className="bg-green-600 hover:bg-green-500 text-white px-6 py-3 rounded-lg font-medium transition"
                     >
                       Browse Files
                     </button>
-                    <p className="text-sm text-gray-600 mt-4">
+                    <p className="text-sm text-black mt-4">
                       Supports .xlsx, .xls, and .csv files
                     </p>
                   </div>
@@ -718,37 +718,37 @@ export default function Dashboard() {
                   {isProcessing && (
                     <div className="mt-6 text-center">
                       <div className="inline-block animate-spin rounded-full h-8 w-8 border-4 border-green-500 border-t-transparent"></div>
-                      <p className="mt-2 text-gray-600">Processing file...</p>
+                      <p className="mt-2 text-black">Processing file...</p>
                     </div>
                   )}
 
                   {/* Expected Format Info */}
                   <div className="mt-8 bg-gray-50 rounded-xl p-6">
-                    <h4 className="font-semibold text-gray-800 mb-3">Expected Column Names</h4>
+                    <h4 className="font-semibold text-black mb-3">Expected Column Names</h4>
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
                       <div>
-                        <span className="font-medium text-gray-700">Facility:</span>
-                        <span className="text-gray-600 ml-1">Facility Name, Hospital</span>
+                        <span className="font-medium text-black">Facility:</span>
+                        <span className="text-black ml-1">Facility Name, Hospital</span>
                       </div>
                       <div>
-                        <span className="font-medium text-gray-700">Census:</span>
-                        <span className="text-gray-600 ml-1">Daily Census, ADC</span>
+                        <span className="font-medium text-black">Census:</span>
+                        <span className="text-black ml-1">Daily Census, ADC</span>
                       </div>
                       <div>
-                        <span className="font-medium text-gray-700">AOE:</span>
-                        <span className="text-gray-600 ml-1">AOE PPD, Operating Expense</span>
+                        <span className="font-medium text-black">AOE:</span>
+                        <span className="text-black ml-1">AOE PPD, Operating Expense</span>
                       </div>
                       <div>
-                        <span className="font-medium text-gray-700">Labor:</span>
-                        <span className="text-gray-600 ml-1">Labor PPD, Labor Cost</span>
+                        <span className="font-medium text-black">Labor:</span>
+                        <span className="text-black ml-1">Labor PPD, Labor Cost</span>
                       </div>
                       <div>
-                        <span className="font-medium text-gray-700">COGS:</span>
-                        <span className="text-gray-600 ml-1">COGS PPD, Food Cost</span>
+                        <span className="font-medium text-black">COGS:</span>
+                        <span className="text-black ml-1">COGS PPD, Food Cost</span>
                       </div>
                       <div>
-                        <span className="font-medium text-gray-700">Revenue:</span>
-                        <span className="text-gray-600 ml-1">Revenue PPD, Sales</span>
+                        <span className="font-medium text-black">Revenue:</span>
+                        <span className="text-black ml-1">Revenue PPD, Sales</span>
                       </div>
                     </div>
                   </div>
@@ -785,28 +785,28 @@ export default function Dashboard() {
 
                   {/* Preview Table */}
                   <div className="border rounded-xl overflow-hidden">
-                    <div className="bg-gray-100 px-4 py-3 font-semibold text-gray-700">
+                    <div className="bg-gray-100 px-4 py-3 font-semibold text-black">
                       Preview ({importPreview.length} records)
                     </div>
                     <div className="overflow-x-auto max-h-80">
                       <table className="w-full text-sm">
                         <thead className="bg-gray-50 sticky top-0">
                           <tr>
-                            <th className="text-left py-2 px-3 font-medium text-gray-700">Facility</th>
-                            <th className="text-left py-2 px-3 font-medium text-gray-700">System</th>
-                            <th className="text-left py-2 px-3 font-medium text-gray-700">Period</th>
-                            <th className="text-right py-2 px-3 font-medium text-gray-700">Census</th>
-                            <th className="text-right py-2 px-3 font-medium text-gray-700">AOE PPD</th>
-                            <th className="text-right py-2 px-3 font-medium text-gray-700">Labor PPD</th>
-                            <th className="text-right py-2 px-3 font-medium text-gray-700">COGS PPD</th>
+                            <th className="text-left py-2 px-3 font-medium text-black">Facility</th>
+                            <th className="text-left py-2 px-3 font-medium text-black">System</th>
+                            <th className="text-left py-2 px-3 font-medium text-black">Period</th>
+                            <th className="text-right py-2 px-3 font-medium text-black">Census</th>
+                            <th className="text-right py-2 px-3 font-medium text-black">AOE PPD</th>
+                            <th className="text-right py-2 px-3 font-medium text-black">Labor PPD</th>
+                            <th className="text-right py-2 px-3 font-medium text-black">COGS PPD</th>
                           </tr>
                         </thead>
                         <tbody>
                           {importPreview.slice(0, 20).map((row, idx) => (
                             <tr key={idx} className="border-t border-gray-100 hover:bg-gray-50">
                               <td className="py-2 px-3">{row.facility_name}</td>
-                              <td className="py-2 px-3 text-gray-600">{row.health_system}</td>
-                              <td className="py-2 px-3 text-gray-600">{row.period}</td>
+                              <td className="py-2 px-3 text-black">{row.health_system}</td>
+                              <td className="py-2 px-3 text-black">{row.period}</td>
                               <td className="py-2 px-3 text-right">{row.daily_census?.toFixed(0) || '-'}</td>
                               <td className="py-2 px-3 text-right">${row.aoe_ppd?.toFixed(2) || '-'}</td>
                               <td className="py-2 px-3 text-right">${row.labor_ppd?.toFixed(2) || '-'}</td>
@@ -817,7 +817,7 @@ export default function Dashboard() {
                       </table>
                     </div>
                     {importPreview.length > 20 && (
-                      <div className="bg-gray-50 px-4 py-2 text-sm text-gray-500 text-center">
+                      <div className="bg-gray-50 px-4 py-2 text-sm text-black text-center">
                         Showing 20 of {importPreview.length} records
                       </div>
                     )}
@@ -831,19 +831,19 @@ export default function Dashboard() {
                   {importResult.success && importResult.recordsImported > 0 ? (
                     <>
                       <CheckCircle size={64} className="mx-auto text-green-500 mb-4" />
-                      <h3 className="text-2xl font-bold text-gray-800 mb-2">Import Successful!</h3>
-                      <p className="text-gray-600 mb-6">
+                      <h3 className="text-2xl font-bold text-black mb-2">Import Successful!</h3>
+                      <p className="text-black mb-6">
                         {importResult.recordsImported} records have been added to your dashboard
                       </p>
                       <div className="bg-green-50 rounded-xl p-6 max-w-md mx-auto">
                         <div className="grid grid-cols-2 gap-4 text-left">
                           <div>
-                            <p className="text-sm text-gray-600">Records Imported</p>
+                            <p className="text-sm text-black">Records Imported</p>
                             <p className="text-2xl font-bold text-green-600">{importResult.recordsImported}</p>
                           </div>
                           <div>
-                            <p className="text-sm text-gray-600">Total Records</p>
-                            <p className="text-2xl font-bold text-gray-800">{data.length}</p>
+                            <p className="text-sm text-black">Total Records</p>
+                            <p className="text-2xl font-bold text-black">{data.length}</p>
                           </div>
                         </div>
                       </div>
@@ -851,7 +851,7 @@ export default function Dashboard() {
                   ) : (
                     <>
                       <AlertCircle size={64} className="mx-auto text-red-500 mb-4" />
-                      <h3 className="text-2xl font-bold text-gray-800 mb-2">Import Failed</h3>
+                      <h3 className="text-2xl font-bold text-black mb-2">Import Failed</h3>
                       {importResult.errors.map((err, i) => (
                         <p key={i} className="text-red-600 mb-2">{err}</p>
                       ))}
@@ -863,7 +863,7 @@ export default function Dashboard() {
 
             {/* Modal Footer */}
             <div className="bg-gray-50 px-6 py-4 flex justify-between items-center border-t">
-              <div className="text-sm text-gray-500">
+              <div className="text-sm text-black">
                 {importStep === 'preview' && `${importPreview.length} records ready to import`}
                 {importStep === 'result' && importResult?.success && 'Data added to current session'}
               </div>
@@ -872,7 +872,7 @@ export default function Dashboard() {
                   <>
                     <button
                       onClick={resetImport}
-                      className="px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg transition"
+                      className="px-4 py-2 text-black hover:bg-gray-200 rounded-lg transition"
                     >
                       Back
                     </button>
@@ -889,7 +889,7 @@ export default function Dashboard() {
                   <>
                     <button
                       onClick={resetImport}
-                      className="px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg transition"
+                      className="px-4 py-2 text-black hover:bg-gray-200 rounded-lg transition"
                     >
                       Import Another
                     </button>
@@ -904,7 +904,7 @@ export default function Dashboard() {
                 {importStep === 'upload' && (
                   <button
                     onClick={closeImportModal}
-                    className="px-4 py-2 text-gray-700 hover:bg-gray-200 rounded-lg transition"
+                    className="px-4 py-2 text-black hover:bg-gray-200 rounded-lg transition"
                   >
                     Cancel
                   </button>
@@ -934,9 +934,9 @@ function StatsCard({
       <div className="flex items-center justify-between mb-4">
         <div className="p-2 bg-gray-100 rounded-lg">{icon}</div>
       </div>
-      <h3 className="text-gray-600 text-sm font-medium">{title}</h3>
+      <h3 className="text-black text-sm font-medium">{title}</h3>
       <p className="text-2xl font-bold text-gray-900 mt-1">{value}</p>
-      <p className="text-sm text-gray-500 mt-2">{trend}</p>
+      <p className="text-sm text-black mt-2">{trend}</p>
     </div>
   );
 }
