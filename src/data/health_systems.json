@@ -1,0 +1,22 @@
+[
+  {
+    "id": 2,
+    "name": "Ardent Health Services",
+    "short_code": "ARDENT_HEA"
+  },
+  {
+    "id": 1,
+    "name": "Benchmark Tool (Mixed)",
+    "short_code": "BENCHMARK_"
+  },
+  {
+    "id": 3,
+    "name": "SSM Health",
+    "short_code": "SSM_HEALTH"
+  },
+  {
+    "id": 4,
+    "name": "UCHealth",
+    "short_code": "UCHEALTH"
+  }
+]

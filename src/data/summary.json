@@ -1,0 +1,289 @@
+{
+  "total_facilities": 223,
+  "total_health_systems": 4,
+  "total_periods": 10,
+  "total_records": 351,
+  "health_systems": [
+    {
+      "name": "Benchmark Tool (Mixed)",
+      "facilities": 168,
+      "records": 168
+    },
+    {
+      "name": "Ardent Health Services",
+      "facilities": 26,
+      "records": 104
+    },
+    {
+      "name": "SSM Health",
+      "facilities": 22,
+      "records": 44
+    },
+    {
+      "name": "UCHealth",
+      "facilities": 7,
+      "records": 35
+    }
+  ],
+  "periods": [
+    {
+      "label": "Historical",
+      "records": 194
+    },
+    {
+      "label": "Jan2023-Dec2023",
+      "records": 26
+    },
+    {
+      "label": "Jan2024-Dec2024",
+      "records": 48
+    },
+    {
+      "label": "Jan2025-Apr2025",
+      "records": 22
+    },
+    {
+      "label": "Jan2025-Jul2025",
+      "records": 26
+    },
+    {
+      "label": "Jul2020-Jun2021",
+      "records": 7
+    },
+    {
+      "label": "Jul2021-Jun2022",
+      "records": 7
+    },
+    {
+      "label": "Jul2022-Jun2023",
+      "records": 7
+    },
+    {
+      "label": "Jul2023-Jun2024",
+      "records": 7
+    },
+    {
+      "label": "Jul2024-Feb2025",
+      "records": 7
+    }
+  ],
+  "peer_benchmarks": [
+    {
+      "census_min": 0,
+      "census_max": 50,
+      "census_label": "0-50",
+      "count": 141,
+      "aoe_ppd": {
+        "p25": 88.6,
+        "p50": 152.3,
+        "p75": 210.16
+      },
+      "labor_ppd": {
+        "p25": 25.29,
+        "p50": 102.68,
+        "p75": 147.95
+      },
+      "cogs_ppd": {
+        "p25": 16.56,
+        "p50": 30.58,
+        "p75": 41.84
+      },
+      "revenue_ppd": {
+        "p25": 17.49,
+        "p50": 28.38,
+        "p75": 42.13
+      },
+      "productive_ftes": {
+        "p25": 6.9,
+        "p50": 9.4,
+        "p75": 15.3
+      }
+    },
+    {
+      "census_min": 50,
+      "census_max": 100,
+      "census_label": "50-100",
+      "count": 57,
+      "aoe_ppd": {
+        "p25": 69.59,
+        "p50": 91.07,
+        "p75": 104.95
+      },
+      "labor_ppd": {
+        "p25": 36.04,
+        "p50": 66.2,
+        "p75": 77.86
+      },
+      "cogs_ppd": {
+        "p25": 17.31,
+        "p50": 24.22,
+        "p75": 33.29
+      },
+      "revenue_ppd": {
+        "p25": 19.39,
+        "p50": 25.26,
+        "p75": 36.16
+      },
+      "productive_ftes": {
+        "p25": 21.44,
+        "p50": 26.9,
+        "p75": 33.18
+      }
+    },
+    {
+      "census_min": 100,
+      "census_max": 150,
+      "census_label": "100-150",
+      "count": 54,
+      "aoe_ppd": {
+        "p25": 34.64,
+        "p50": 52.32,
+        "p75": 75.0
+      },
+      "labor_ppd": {
+        "p25": 23.07,
+        "p50": 36.67,
+        "p75": 47.35
+      },
+      "cogs_ppd": {
+        "p25": 16.46,
+        "p50": 22.39,
+        "p75": 28.62
+      },
+      "revenue_ppd": {
+        "p25": 14.57,
+        "p50": 22.21,
+        "p75": 27.37
+      },
+      "productive_ftes": {
+        "p25": 27.3,
+        "p50": 35.24,
+        "p75": 44.21
+      }
+    },
+    {
+      "census_min": 150,
+      "census_max": 200,
+      "census_label": "150-200",
+      "count": 25,
+      "aoe_ppd": {
+        "p25": 39.25,
+        "p50": 50.33,
+        "p75": 65.75
+      },
+      "labor_ppd": {
+        "p25": 28.91,
+        "p50": 36.96,
+        "p75": 50.54
+      },
+      "cogs_ppd": {
+        "p25": 18.56,
+        "p50": 21.79,
+        "p75": 28.81
+      },
+      "revenue_ppd": {
+        "p25": 17.74,
+        "p50": 21.03,
+        "p75": 28.17
+      },
+      "productive_ftes": {
+        "p25": 42.7,
+        "p50": 52.2,
+        "p75": 61.6
+      }
+    },
+    {
+      "census_min": 200,
+      "census_max": 300,
+      "census_label": "200-300",
+      "count": 29,
+      "aoe_ppd": {
+        "p25": 36.46,
+        "p50": 54.01,
+        "p75": 68.06
+      },
+      "labor_ppd": {
+        "p25": 27.01,
+        "p50": 42.27,
+        "p75": 54.55
+      },
+      "cogs_ppd": {
+        "p25": 15.2,
+        "p50": 23.07,
+        "p75": 28.98
+      },
+      "revenue_ppd": {
+        "p25": 14.12,
+        "p50": 21.99,
+        "p75": 25.17
+      },
+      "productive_ftes": {
+        "p25": 55.46,
+        "p50": 65.0,
+        "p75": 77.97
+      }
+    },
+    {
+      "census_min": 300,
+      "census_max": 500,
+      "census_label": "300-500",
+      "count": 30,
+      "aoe_ppd": {
+        "p25": 45.49,
+        "p50": 76.51,
+        "p75": 88.29
+      },
+      "labor_ppd": {
+        "p25": 42.47,
+        "p50": 53.73,
+        "p75": 70.66
+      },
+      "cogs_ppd": {
+        "p25": 18.01,
+        "p50": 22.75,
+        "p75": 30.13
+      },
+      "revenue_ppd": {
+        "p25": 16.86,
+        "p50": 23.24,
+        "p75": 31.48
+      },
+      "productive_ftes": {
+        "p25": 85.76,
+        "p50": 111.97,
+        "p75": 126.1
+      }
+    },
+    {
+      "census_min": 500,
+      "census_max": 1000,
+      "census_label": "500-1000",
+      "count": 10,
+      "aoe_ppd": {
+        "p25": 38.16,
+        "p50": 49.03,
+        "p75": 56.63
+      },
+      "labor_ppd": {
+        "p25": 28.62,
+        "p50": 40.74,
+        "p75": 46.24
+      },
+      "cogs_ppd": {
+        "p25": 23.28,
+        "p50": 25.12,
+        "p75": 26.02
+      },
+      "revenue_ppd": {
+        "p25": 21.88,
+        "p50": 25.82,
+        "p75": 26.41
+      },
+      "productive_ftes": {
+        "p25": 144.54,
+        "p50": 161.3,
+        "p75": 200.6
+      }
+    }
+  ]
+}

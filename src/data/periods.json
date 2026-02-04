@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "label": "Historical"
+  },
+  {
+    "id": 2,
+    "label": "Jan2023-Dec2023"
+  },
+  {
+    "id": 3,
+    "label": "Jan2024-Dec2024"
+  },
+  {
+    "id": 5,
+    "label": "Jan2025-Apr2025"
+  },
+  {
+    "id": 4,
+    "label": "Jan2025-Jul2025"
+  },
+  {
+    "id": 6,
+    "label": "Jul2020-Jun2021"
+  },
+  {
+    "id": 7,
+    "label": "Jul2021-Jun2022"
+  },
+  {
+    "id": 8,
+    "label": "Jul2022-Jun2023"
+  },
+  {
+    "id": 9,
+    "label": "Jul2023-Jun2024"
+  },
+  {
+    "id": 10,
+    "label": "Jul2024-Feb2025"
+  }
+]
